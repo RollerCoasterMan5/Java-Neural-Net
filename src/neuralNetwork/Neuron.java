@@ -1,3 +1,4 @@
+package neuralNetwork;
 import java.util.Vector;
 
 public class Neuron {

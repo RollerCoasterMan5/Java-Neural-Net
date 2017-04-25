@@ -1,3 +1,4 @@
+package neuralNetwork;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -8,6 +9,7 @@ public class TrainingData {
 	BufferedReader dataFile;
 	
 	public TrainingData(String fileName) {
+		System.out.println(fileName);
 		try {
 			dataFile = new BufferedReader(new FileReader(fileName));
 		} catch (FileNotFoundException e) {

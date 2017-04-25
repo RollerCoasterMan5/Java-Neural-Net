@@ -1,8 +1,9 @@
+package neuralNetwork;
 import java.util.Vector;
 
 public class NeuralNetwork {
 	public static void main(String[] args) {
-		TrainingData trainData = new TrainingData("C:\\Users\\CHRIS-LAPTOP\\workspace\\Neural Network\\src\\TrainingData.txt");
+		TrainingData trainData = new TrainingData(NeuralNetwork.class.getResource("/neuralNetwork/TrainingData.txt").getPath());
 		
 		Vector<Integer> topology = new Vector<Integer>();
 		trainData.getTopology(topology);
